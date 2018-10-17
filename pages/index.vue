@@ -1,66 +1,35 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        tochka
-      </h1>
-      <h2 class="subtitle">
-        test project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <div class="container">
+    <section class="banner">
+      <h1 class="banner__title">Тестовое задание</h1>
+      <p class="banner__text">На экранах до 1024px показывать CSS-анимацию. При клике на кнопку плавный scroll до следующего блока.</p>
+      <div class="banner__button">
+        <Button url="#next" class="button_splash">Подробнее</Button>
       </div>
-      <img src="~/assets/images/icon_1.svg">
-    </div>
-  </section>
+    </section>
+    <section class="icons">
+      <IconedText icon="card">Банковские карты</IconedText>
+      <IconedText icon="message">Мессенджер</IconedText>
+      <IconedText icon="ibank">Интернет-банк</IconedText>
+      <IconedText icon="ewallet">Электронный кошелёк</IconedText>
+      <IconedText icon="phone">Баланс телефона</IconedText>
+    </section>
+  </div>
+
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Button from '~/components/Button.vue'
+import IconedText from '~/components/IconedText.vue'
 
 export default {
   components: {
-    AppLogo
+    Button,
+    IconedText
   }
 }
 </script>
 
-<style lang="scss">
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style>
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
-
