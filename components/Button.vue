@@ -10,7 +10,7 @@ export default {
   props: {
     splash: {
       type: String
-    }, 
+    },
     options: {
       type: Object,
       default() {
@@ -26,7 +26,7 @@ export default {
        if (this.options.toTarget) {
           let curTarget = this.options.toTarget;
           let curDuration = this.options.duration;
-      
+
           let thisTarget = document.querySelector(curTarget);
           let targetPosition = thisTarget.getBoundingClientRect().top;
           let startPosition = window.pageYOffset;
@@ -64,7 +64,7 @@ export default {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 7px 32px;
+  padding: 8px 32px;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
@@ -92,6 +92,16 @@ export default {
   &::after {
     border-bottom: 2px solid;
     bottom: 0;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    padding: 8px 50px;
   }
 }
 

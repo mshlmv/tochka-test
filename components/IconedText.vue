@@ -20,12 +20,13 @@ export default {
   display: flex;
   align-items: center;
 
-  @media (min-width: 768px) {
-    margin-right: 48px;
-  }
 }
 .iconed-text__icon {
   margin-right: 24px;
+
+  img {
+    display: block;
+  }
 }
 .iconed-text__text {
   color: #000;
@@ -33,6 +34,9 @@ export default {
 
   @media (min-width: 768px) {
     font-size: 16px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
   }
 }
 </style>
