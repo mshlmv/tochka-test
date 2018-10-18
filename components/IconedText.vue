@@ -15,15 +15,24 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .iconed-text {
   display: flex;
   align-items: center;
+
+  @media (min-width: 768px) {
+    margin-right: 48px;
+  }
 }
 .iconed-text__icon {
   margin-right: 24px;
 }
 .iconed-text__text {
   color: #000;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 </style>

@@ -63,17 +63,31 @@
     color: #000;
     margin-top: 0;
     margin-bottom: 48px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.17;
+    }
   }
   .banner__text {
     font-size: 14px;
     font-weight: bold;
     line-height: 1.43;
     margin-bottom: 48px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
   .section-title {
     font-size: 26px;
     line-height: 1.23;
     margin-top: 0;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 1.2;
+    }
   }
 
   .icons {
@@ -89,5 +103,11 @@
 
   .iconed-list {
     margin-top: 32px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
   }
 </style>
